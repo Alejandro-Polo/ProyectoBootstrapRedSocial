@@ -1,0 +1,52 @@
+/* Estilos generales */
+body {
+    background-color: #18191A;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilos del menú */
+.contenedor-buscador {
+    background-color: #3A3B3C;
+    border-radius: 50px;
+    padding: 5px 15px;
+    display: flex;
+    align-items: center;
+    width: 250px;
+}
+.contenedor-buscador i {
+    margin-right: 5px;
+}
+.contenedor-buscador input {
+    background: transparent;
+    border: none;
+    color: white;
+    outline: none;
+    flex: 1;
+}
+.nav-iconos {
+    font-size: 1.5rem;
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+}
+.contenedor-perfil {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.contenedor-perfil img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+.icon-circle {
+    background-color: #3A3B3C;
+    padding: 8px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+}
