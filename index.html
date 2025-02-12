@@ -13,25 +13,28 @@
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">B</a>
-          <form class="d-flex contenedor-buscador" role="search">
-            <i class="bi bi-search text-white"></i>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container-fluid d-flex flex-wrap">
+          <a class="navbar-brand bg-white text-black p-2 rounded" href="#">B</a>
+          <div class="d-none d-sm-flex">
+          <form class="d-flex bg-secondary p-2 rounded-5" role="search">
+            <i class="bi bi-search text-white mx-2"></i>
             <input
-              class="form-control me-2"
+              class="bg-transparent me-2 border-0 text-placeholder"
               type="search"
               placeholder="Buscar"
               aria-label="Search"
             />
           </form>
-          <ul class="navbar-nav mx-auto nav-iconos">
+          </div>
+          <div class="col-12 col-lg-6 order-1 order-lg-0 ">
+          <ul class="navbar mx-auto nav-iconos style-none list-unstyled">
             <li class="nav-item">
               <a class="nav-link active" href="#"
                 ><i class="bi bi-house-door-fill"></i>
               </a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item ">
               <a class="nav-link" href="#"><i class="bi bi-flag"></i></a>
             </li>
             <li class="nav-item">
@@ -44,23 +47,112 @@
               <a class="nav-link" href="#"><i class="bi bi-people"></i></a>
             </li>
           </ul>
-          <div class="d-flex contenedor-perfil">
-            <img src="./assets/img/img/fotoperfil1.jpg" alt="Perfil" />
+          </div>
+          <div class="d-flex gap-3 order-0 order-lg-1">
+            <img class="rounded-circle wh-img" src="./assets/img/img/fotoperfil1.jpg" alt="Perfil" />
             <span class="text-white">Alejandro</span>
-            <div class="icon-circle">
+            <div class="wh-img bg-secondary rounded-circle d-flex align-items-center justify-content-center">
               <i class="bi bi-microsoft text-white"></i>
             </div>
-            <div class="icon-circle">
+            <div class="wh-img bg-secondary rounded-circle d-flex align-items-center justify-content-center">
               <i class="bi bi-chat-fill text-white"></i>
             </div>
-            <div class="icon-circle">
+            <div class="wh-img bg-secondary rounded-circle d-flex align-items-center justify-content-center">
               <i class="bi bi-bell-fill text-white"></i>
             </div>
           </div>
         </div>
       </nav>
     </header>
-    <main></main>
+    <main>
+        <div class="row">
+            <aside class="col-md-3 order-0 d-none d-xl-block ">
+                <ul class="list-unstyled p-3 d-grid gap-3 ">
+                    <li><img class="rounded-circle wh-img" src="./assets/img/img/fotoperfil1.jpg" alt="Alejandro Polo"></i> Alejandro Polo</li>
+                    <li><i class="bi bi-people"></i> Amigos</li>
+                    <li><i class="bi bi-flag"></i> Páginas</li>
+                    <li><i class="bi bi-people-fill"></i> Grupos</li>
+                    <li><i class="bi bi-shop"></i> Marketplace</li>
+                    <li><i class="bi bi-play-circle"></i> Watch</li>
+                    <li><i class="bi bi-calendar-event"></i> Eventos</li>
+                </ul>
+                <div class="text-secondary p-3">
+                  <ul class="list-unstyled d-grid gap-1">
+                    <li>Privacidad Condiciones</li>
+                    <li>Publicidad Opciones de anuncios</li>
+                    <li>Cookies Más</li>
+                  </ul>
+                </div>
+            </aside>
+            <section class="col-xl-6 ml-5 mr-5 p-4 order-1 flex">
+                <div class="bg-dark p-3  mb-4 rounded">
+                    <div class="d-flex text-aling-center gap-2">
+                        <img class="rounded-circle wh-img" src="./assets/img/img/fotoperfil1.jpg" alt="Alejandro Polo">
+                        <input class="bg-secondary w-100 p-2 rounded-5 border-0 text-white text-placeholder" type="text" placeholder="¿Qué estás pensando, Alejandro?">
+                    </div>
+                    <hr>
+                    <div class=" d-flex justify-content-around mt-3">
+                        <span><i class="bi bi-camera-video-fill"></i> Video</span>
+                        <span><i class="bi bi-camera"></i> Foto</span>
+                        <span><i class="bi bi-emoji-smile"></i> Sentimiento</span>
+                    </div>
+                </div>
+                <div class="bg-dark p-4 rounded mb-4">
+                  <div>
+                      <img class="rounded-circle wh-img me-2 " src="./assets/img/img/persona3.jpg" alt="Stephanie Doe">
+                      <span>Stephanie Doe</span>
+                  </div>
+                  <p>Lorem ipsum dolor sit amet.</p>
+                  <img class="w-100" src="./assets/img/img/paisaje1.jpg" alt="Paisaje">
+                  <div class="d-flex justify-content-between mt-3">
+                      <span><i class="bi bi-heart"></i> 60</span>
+                      <span> 7 comentarios</span>
+                  </div>
+                  <div class=" d-flex justify-content-around mt-3">
+                    <span >
+                        <i class="bi bi-hand-thumbs-up me-2"></i> Me gusta
+                    </span>
+                    <span>
+                        <i class="bi bi-chat-dots me-2"></i> Comentar
+                    </span>
+                </div>
+              </div>
+                <div class="bg-dark p-4 rounded">
+                    <div>
+                        <img class="rounded-circle wh-img me-2 " src="./assets/img/img/persona4.jpg" alt="Stephanie Doe">
+                        <span>Cesar Doe</span>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <img class="w-100" src="./assets/img/img/paisaje2.jpg" alt="Paisaje">
+                    <div class="d-flex justify-content-between mt-3">
+                        <span><i class="bi bi-heart"></i> 60</span>
+                        <span><i class="bi bi-chat"></i> 7 comentarios</span>
+                    </div>
+                    <div class="d-flex justify-content-around mt-3">
+                      <span >
+                          <i class="bi bi-hand-thumbs-up me-2"></i> Me gusta
+                      </span>
+                      <span>
+                          Comentar
+                      </span>
+                  </div>
+                </div>
+            </section>
+            
+            <aside class="col-md-3 mt-4 d-none d-xl-block order-2">
+                <h5>Publicidad</h5>
+                <img class="mb-4" src="./assets/img/img/ad1.jpg" alt="Publicidad 1">
+                <img src="./assets/img/img/ad2.jpg" alt="Publicidad 2">
+                <h5>Contactos</h5>
+                <ul class="list-unstyled d-grid gap-3">
+                    <li><img class="rounded-circle wh-img me-2" src="./assets/img/img/persona2.jpg" alt="Alejandro"> Alejandro Doe</li>
+                    <li><img class="rounded-circle wh-img me-2" src="./assets/img/img/persona3.jpg" alt="Stephanie"> Stephanie Doe</li>
+                    <li><img class="rounded-circle wh-img me-2" src="./assets/img/img/persona4.jpg" alt="Cesar"> Cesar Doe</li>
+                    <li><img class="rounded-circle wh-img me-2" src="./assets/img/img/persona5.jpg" alt="Manuel"> Manuel Doe</li>
+                </ul>
+            </aside>
+        </div>
+    </main>
     <script src="./js/bootstrap.js"></script>
   </body>
 </html>
